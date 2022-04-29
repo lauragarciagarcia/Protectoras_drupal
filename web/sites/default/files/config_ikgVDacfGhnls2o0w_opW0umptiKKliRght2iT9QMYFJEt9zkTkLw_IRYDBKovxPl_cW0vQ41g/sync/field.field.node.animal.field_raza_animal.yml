@@ -1,0 +1,19 @@
+uuid: 912c8783-2011-4e1e-87bb-e9a2e414b362
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_raza_animal
+    - node.type.animal
+id: node.animal.field_raza_animal
+field_name: field_raza_animal
+entity_type: node
+bundle: animal
+label: 'Raza animal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

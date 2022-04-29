@@ -1,0 +1,42 @@
+uuid: 62c159fa-2e28-4056-8904-9e77fba21ca6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.protectora.body
+    - field.field.node.protectora.field_direccion
+    - field.field.node.protectora.field_geolocalizacion
+    - field.field.node.protectora.field_link_a_su_web
+    - field.field.node.protectora.field_logo_protectora
+    - field.field.node.protectora.field_su_correo
+    - field.field.node.protectora.field_telefono_protectora
+    - node.type.protectora
+  module:
+    - text
+    - user
+id: node.protectora.teaser
+targetEntityType: node
+bundle: protectora
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_direccion: true
+  field_geolocalizacion: true
+  field_link_a_su_web: true
+  field_logo_protectora: true
+  field_su_correo: true
+  field_telefono_protectora: true

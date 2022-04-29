@@ -1,0 +1,22 @@
+uuid: 8ad801e5-19d0-4304-a9cc-0c79f3c12994
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: protectora_pattern
+label: 'protectora pattern'
+type: 'canonical_entities:node'
+pattern: '/protectora/[node:field_etiqueta_protectora]'
+selection_criteria:
+  d8ef8366-7ec2-44c3-9cbb-7b83fb010893:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d8ef8366-7ec2-44c3-9cbb-7b83fb010893
+    context_mapping:
+      node: node
+    bundles:
+      protectora: protectora
+selection_logic: and
+weight: -5
+relationships: {  }

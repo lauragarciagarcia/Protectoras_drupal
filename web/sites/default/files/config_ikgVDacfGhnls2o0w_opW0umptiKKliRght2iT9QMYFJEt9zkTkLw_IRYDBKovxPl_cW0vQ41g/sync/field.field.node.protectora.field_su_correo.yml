@@ -1,0 +1,19 @@
+uuid: 7e22ea89-d0bd-4f3a-ab42-4dd7a87502ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_su_correo
+    - node.type.protectora
+id: node.protectora.field_su_correo
+field_name: field_su_correo
+entity_type: node
+bundle: protectora
+label: 'Su correo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

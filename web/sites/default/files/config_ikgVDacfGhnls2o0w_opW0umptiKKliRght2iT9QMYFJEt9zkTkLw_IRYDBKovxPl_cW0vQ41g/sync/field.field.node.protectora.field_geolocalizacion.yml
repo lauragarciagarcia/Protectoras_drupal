@@ -1,0 +1,21 @@
+uuid: 99444ca7-d781-42a3-b2ca-576913d44682
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geolocalizacion
+    - node.type.protectora
+  module:
+    - geofield
+id: node.protectora.field_geolocalizacion
+field_name: field_geolocalizacion
+entity_type: node
+bundle: protectora
+label: Geolocalización
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

@@ -1,0 +1,18 @@
+uuid: 25b0fa30-7dd1-43b7-af2e-a061bd56586b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.protectora
+id: node.protectora.title
+field_name: title
+entity_type: node
+bundle: protectora
+label: Protectora
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

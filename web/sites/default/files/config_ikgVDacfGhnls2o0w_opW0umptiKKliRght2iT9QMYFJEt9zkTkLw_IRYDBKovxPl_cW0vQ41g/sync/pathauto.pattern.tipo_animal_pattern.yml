@@ -1,0 +1,22 @@
+uuid: e28cb8fd-bce7-4747-a710-af3ed249b2dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: tipo_animal_pattern
+label: 'taxonomía pattern'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:name]'
+selection_criteria:
+  9e983391-c7c9-4121-a7cd-89301df55b9c:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 9e983391-c7c9-4121-a7cd-89301df55b9c
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      tags: tags
+selection_logic: and
+weight: -5
+relationships: {  }

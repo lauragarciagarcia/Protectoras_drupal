@@ -1,0 +1,21 @@
+uuid: 8e59561f-fffb-4bd9-88a1-e3fe6f706821
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono_protectora
+    - node.type.protectora
+  module:
+    - telephone
+id: node.protectora.field_telefono_protectora
+field_name: field_telefono_protectora
+entity_type: node
+bundle: protectora
+label: 'Teléfono protectora'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -13,19 +13,23 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  geofield: 0
   geolocation: 0
   help: 0
   history: 0
   iframe: 0
   image: 0
+  leaflet: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
@@ -39,13 +43,22 @@ module:
   shortcut: 0
   system: 0
   taxonomy: 0
+  taxonomy_menu: 0
+  telephone: 0
+  telephone_formatter: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
   user: 0
   views_ui: 0
   webform: 0
+  webform_examples: 0
+  webform_node: 0
+  webform_templates: 0
+  webform_ui: 0
+  pathauto: 1
   views: 10
   standard: 1000
 theme:
@@ -54,4 +67,5 @@ theme:
   stable: 0
   classy: 0
   bootstrap4: 0
+  olivero: 0
 profile: standard

@@ -1,0 +1,19 @@
+uuid: 2ff1f5f6-dc84-49e0-9c02-8eedbefe8598
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tamano_animal
+    - node.type.animal
+id: node.animal.field_tamano_animal
+field_name: field_tamano_animal
+entity_type: node
+bundle: animal
+label: 'Tamaño animal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

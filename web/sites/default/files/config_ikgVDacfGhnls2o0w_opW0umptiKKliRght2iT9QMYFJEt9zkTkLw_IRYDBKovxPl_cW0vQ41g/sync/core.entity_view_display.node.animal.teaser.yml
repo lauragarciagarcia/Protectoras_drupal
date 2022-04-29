@@ -1,0 +1,48 @@
+uuid: a6ea5523-547c-4e03-8ca0-e206bee3d85d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.animal.body
+    - field.field.node.animal.field_edad_animal
+    - field.field.node.animal.field_etiqueta_protectora
+    - field.field.node.animal.field_etiqueta_raza
+    - field.field.node.animal.field_etiquetas_animal
+    - field.field.node.animal.field_foto_animal
+    - field.field.node.animal.field_raza_animal
+    - field.field.node.animal.field_sexo_animal
+    - field.field.node.animal.field_tamano_animal
+    - field.field.node.animal.field_tipo_animal
+    - node.type.animal
+  module:
+    - text
+    - user
+id: node.animal.teaser
+targetEntityType: node
+bundle: animal
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_edad_animal: true
+  field_etiqueta_protectora: true
+  field_etiqueta_raza: true
+  field_etiquetas_animal: true
+  field_foto_animal: true
+  field_raza_animal: true
+  field_sexo_animal: true
+  field_tamano_animal: true
+  field_tipo_animal: true

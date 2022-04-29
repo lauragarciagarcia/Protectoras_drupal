@@ -1,0 +1,134 @@
+uuid: 8d15b57a-f5c6-4413-9022-71b4f1a079ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.protectora.body
+    - field.field.node.protectora.field_direccion
+    - field.field.node.protectora.field_geolocalizacion
+    - field.field.node.protectora.field_link_a_su_web
+    - field.field.node.protectora.field_logo_protectora
+    - field.field.node.protectora.field_su_correo
+    - field.field.node.protectora.field_telefono_protectora
+    - image.style.thumbnail
+    - node.type.protectora
+  module:
+    - geofield
+    - image
+    - link
+    - path
+    - telephone
+    - text
+id: node.protectora.default
+targetEntityType: node
+bundle: protectora
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 13
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_direccion:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_geolocalizacion:
+    type: geofield_latlon
+    weight: 6
+    region: content
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+  field_link_a_su_web:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_logo_protectora:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_su_correo:
+    type: email_default
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_telefono_protectora:
+    type: telephone_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

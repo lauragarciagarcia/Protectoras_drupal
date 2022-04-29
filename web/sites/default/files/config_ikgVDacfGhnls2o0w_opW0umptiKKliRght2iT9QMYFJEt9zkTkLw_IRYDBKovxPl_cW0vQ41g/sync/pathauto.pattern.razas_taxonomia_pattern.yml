@@ -1,0 +1,22 @@
+uuid: db104377-f495-4741-b110-03bfb39db09c
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: razas_taxonomia_pattern
+label: 'razas taxonomía pattern'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/razas/[term:name]'
+selection_criteria:
+  1caf4ec8-11de-40b8-8071-c0d336aeea82:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 1caf4ec8-11de-40b8-8071-c0d336aeea82
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      razas: razas
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,194 @@
+uuid: d56444b4-71fc-42aa-b23b-471428a25325
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.animal.body
+    - field.field.node.animal.field_edad_animal
+    - field.field.node.animal.field_etiqueta_protectora
+    - field.field.node.animal.field_etiqueta_raza
+    - field.field.node.animal.field_etiquetas_animal
+    - field.field.node.animal.field_foto_animal
+    - field.field.node.animal.field_raza_animal
+    - field.field.node.animal.field_sexo_animal
+    - field.field.node.animal.field_tamano_animal
+    - field.field.node.animal.field_tipo_animal
+    - image.style.imagen_animal
+    - node.type.animal
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_informacion:
+      children:
+        - group_raza
+        - group_tamano
+        - group_edad
+        - group_sexo
+      label: Información
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+    group_raza:
+      children:
+        - field_tipo_animal
+        - field_raza_animal
+      label: Raza
+      parent_name: group_informacion
+      region: content
+      weight: 1
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_tamano:
+      children:
+        - field_tamano_animal
+      label: Tamaño
+      parent_name: group_informacion
+      region: content
+      weight: 2
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_edad:
+      children:
+        - field_edad_animal
+      label: Edad
+      parent_name: group_informacion
+      region: content
+      weight: 3
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_sexo:
+      children:
+        - field_sexo_animal
+      label: Sexo
+      parent_name: group_informacion
+      region: content
+      weight: 5
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+id: node.animal.default
+targetEntityType: node
+bundle: animal
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_edad_animal:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_etiqueta_protectora:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_etiqueta_raza:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_etiquetas_animal:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_foto_animal:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: imagen_animal
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_raza_animal:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_sexo_animal:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_tamano_animal:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_tipo_animal:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+hidden: {  }

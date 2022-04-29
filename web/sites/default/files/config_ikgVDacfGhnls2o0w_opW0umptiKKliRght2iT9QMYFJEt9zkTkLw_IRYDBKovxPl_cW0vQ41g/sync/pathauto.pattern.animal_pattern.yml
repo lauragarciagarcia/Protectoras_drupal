@@ -1,0 +1,22 @@
+uuid: 67f344dd-7880-4a8c-a4d1-ca04d7b4ca77
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: animal_pattern
+label: 'animal pattern'
+type: 'canonical_entities:node'
+pattern: '/animales/[node:field_tipo_animal]/[node:title]'
+selection_criteria:
+  87d29008-5e22-4291-9f83-145ce22894df:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 87d29008-5e22-4291-9f83-145ce22894df
+    context_mapping:
+      node: node
+    bundles:
+      animal: animal
+selection_logic: and
+weight: -5
+relationships: {  }

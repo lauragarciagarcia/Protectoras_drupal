@@ -21,9 +21,18 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/field_group": "^3.2",
         "drupal/geolocation": "^3.9",
         "drupal/iframe": "^2.16",
+        "drupal/leaflet": "^2.1",
+        "drupal/pathauto": "^1.10",
+        "drupal/taxonomy_menu": "^3.5",
+        "drupal/telephone_formatter": "^1.1",
         "drupal/webform": "^6.1",
+        "drupal/webform_examples": "^6.1",
+        "drupal/webform_node": "^6.1",
+        "drupal/webform_templates": "^6.1",
+        "drupal/webform_ui": "^6.1",
         "drush/drush": "^11.0"
     },
     "conflict": {

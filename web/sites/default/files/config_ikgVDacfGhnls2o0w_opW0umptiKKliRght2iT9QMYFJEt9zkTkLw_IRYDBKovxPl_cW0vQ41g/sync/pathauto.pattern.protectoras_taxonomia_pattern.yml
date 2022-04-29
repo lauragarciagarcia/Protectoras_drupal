@@ -1,0 +1,22 @@
+uuid: 0365c6be-ddde-411b-97a9-6b284c999c86
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: protectoras_taxonomia_pattern
+label: 'protectoras taxonomía pattern'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/protectoras/[term:name]'
+selection_criteria:
+  5933c9df-50f5-4970-937b-316aa9304eb9:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 5933c9df-50f5-4970-937b-316aa9304eb9
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      protectoras: protectoras
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,29 @@
+uuid: ed9f4fca-d91e-4c2f-90ed-b3a1053610ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiqueta_protectora
+    - node.type.animal
+    - taxonomy.vocabulary.protectoras
+id: node.animal.field_etiqueta_protectora
+field_name: field_etiqueta_protectora
+entity_type: node
+bundle: animal
+label: 'Etiqueta Protectora'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      protectoras: protectoras
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

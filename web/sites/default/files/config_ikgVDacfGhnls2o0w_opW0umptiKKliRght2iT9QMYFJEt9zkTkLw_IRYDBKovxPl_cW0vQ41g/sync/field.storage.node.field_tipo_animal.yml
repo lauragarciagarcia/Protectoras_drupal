@@ -1,0 +1,20 @@
+uuid: 56a38846-d678-453c-b608-b67020e5edff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_tipo_animal
+field_name: field_tipo_animal
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

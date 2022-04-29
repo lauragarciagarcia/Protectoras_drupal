@@ -1,0 +1,23 @@
+uuid: 949f85d1-004d-4027-ad2c-d08bc20cb3c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.animal
+  module:
+    - text
+id: node.animal.body
+field_name: body
+entity_type: node
+bundle: animal
+label: 'Descripción individual'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

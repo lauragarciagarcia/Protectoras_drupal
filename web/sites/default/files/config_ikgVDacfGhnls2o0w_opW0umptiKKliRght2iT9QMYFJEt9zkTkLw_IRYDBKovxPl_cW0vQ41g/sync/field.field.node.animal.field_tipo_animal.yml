@@ -1,0 +1,21 @@
+uuid: c7c64f82-c5a8-4bfb-af71-48542bd694e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_animal
+    - node.type.animal
+  module:
+    - text
+id: node.animal.field_tipo_animal
+field_name: field_tipo_animal
+entity_type: node
+bundle: animal
+label: 'Tipo animal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

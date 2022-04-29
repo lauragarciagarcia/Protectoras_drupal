@@ -1,0 +1,15 @@
+uuid: 62e68bcd-05c9-47f8-9b1c-589c6f9b562d
+langcode: en
+status: true
+dependencies: {  }
+name: imagen_animal
+label: 'Imagen animal'
+effects:
+  daf2d01d-a10c-48e9-9515-0cbda4e7b6a2:
+    uuid: daf2d01d-a10c-48e9-9515-0cbda4e7b6a2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 300
+      anchor: center-center
