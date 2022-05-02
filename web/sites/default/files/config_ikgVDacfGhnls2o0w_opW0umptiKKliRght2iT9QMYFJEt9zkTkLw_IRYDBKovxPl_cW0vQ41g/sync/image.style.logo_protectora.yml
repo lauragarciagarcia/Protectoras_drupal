@@ -5,10 +5,11 @@ dependencies: {  }
 name: logo_protectora
 label: 'Logo protectora'
 effects:
-  97f74983-90b3-481d-9188-a1d674cc6a65:
-    uuid: 97f74983-90b3-481d-9188-a1d674cc6a65
-    id: image_resize
-    weight: 1
+  37f4a082-c14d-4e9d-b7fe-36032ff5b7ab:
+    uuid: 37f4a082-c14d-4e9d-b7fe-36032ff5b7ab
+    id: image_scale
+    weight: 2
     data:
       width: 200
       height: 200
+      upscale: false

@@ -5,10 +5,10 @@ dependencies:
   config:
     - field.field.node.animal.body
     - field.field.node.animal.field_edad_animal
-    - field.field.node.animal.field_etiqueta_protectora
     - field.field.node.animal.field_etiqueta_raza
     - field.field.node.animal.field_etiquetas_animal
     - field.field.node.animal.field_foto_animal
+    - field.field.node.animal.field_protectora
     - field.field.node.animal.field_raza_animal
     - field.field.node.animal.field_sexo_animal
     - field.field.node.animal.field_tamano_animal
@@ -48,16 +48,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_etiqueta_protectora:
-    type: entity_reference_autocomplete
-    weight: 27
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_etiqueta_raza:
     type: entity_reference_autocomplete
     weight: 26
@@ -81,6 +71,16 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: imagen_animal
+    third_party_settings: {  }
+  field_protectora:
+    type: entity_reference_autocomplete
+    weight: 29
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_raza_animal:
     type: string_textfield

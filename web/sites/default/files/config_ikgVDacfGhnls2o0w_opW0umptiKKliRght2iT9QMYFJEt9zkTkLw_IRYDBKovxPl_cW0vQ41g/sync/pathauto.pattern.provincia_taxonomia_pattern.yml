@@ -1,0 +1,22 @@
+uuid: a74c2478-bb7a-4014-b66a-a9e288ad5964
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: provincia_taxonomia_pattern
+label: 'provincia taxonomía pattern'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/provincia/[term:name]'
+selection_criteria:
+  dd2926d1-0e90-4d88-b189-5d64058cbb36:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: dd2926d1-0e90-4d88-b189-5d64058cbb36
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      provincias: provincias
+selection_logic: and
+weight: -5
+relationships: {  }

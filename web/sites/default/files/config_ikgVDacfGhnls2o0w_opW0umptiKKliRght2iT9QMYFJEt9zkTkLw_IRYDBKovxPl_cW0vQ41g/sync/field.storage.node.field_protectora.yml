@@ -1,16 +1,15 @@
-uuid: fe68a54c-a309-4faa-b4e6-f60d4df7fc00
+uuid: 23043a6a-b4f5-484b-a768-b37635432fdc
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_etiqueta_protectora
-field_name: field_etiqueta_protectora
+id: node.field_protectora
+field_name: field_protectora
 entity_type: node
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: node
 module: core
 locked: false
 cardinality: 1

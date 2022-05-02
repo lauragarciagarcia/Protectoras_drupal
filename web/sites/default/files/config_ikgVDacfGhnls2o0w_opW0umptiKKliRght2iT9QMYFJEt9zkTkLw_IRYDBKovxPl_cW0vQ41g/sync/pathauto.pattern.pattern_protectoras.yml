@@ -1,0 +1,22 @@
+uuid: 9409adae-0829-496b-ade7-d2e9d775bc75
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_protectoras
+label: 'pattern protectoras'
+type: 'canonical_entities:node'
+pattern: '/protectoras/[node:title]'
+selection_criteria:
+  ea351d77-2371-4694-be9e-b236021c87f8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ea351d77-2371-4694-be9e-b236021c87f8
+    context_mapping:
+      node: node
+    bundles:
+      protectora: protectora
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,20 @@
+uuid: 977712e3-95db-48cc-849e-a426d49e5bf0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_provincia_protectora
+field_name: field_provincia_protectora
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

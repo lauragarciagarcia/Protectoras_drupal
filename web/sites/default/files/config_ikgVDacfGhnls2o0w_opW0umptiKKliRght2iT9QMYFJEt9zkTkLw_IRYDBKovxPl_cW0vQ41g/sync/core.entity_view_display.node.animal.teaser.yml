@@ -6,10 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.animal.body
     - field.field.node.animal.field_edad_animal
-    - field.field.node.animal.field_etiqueta_protectora
     - field.field.node.animal.field_etiqueta_raza
     - field.field.node.animal.field_etiquetas_animal
     - field.field.node.animal.field_foto_animal
+    - field.field.node.animal.field_protectora
     - field.field.node.animal.field_raza_animal
     - field.field.node.animal.field_sexo_animal
     - field.field.node.animal.field_tamano_animal
@@ -38,10 +38,10 @@ content:
     region: content
 hidden:
   field_edad_animal: true
-  field_etiqueta_protectora: true
   field_etiqueta_raza: true
   field_etiquetas_animal: true
   field_foto_animal: true
+  field_protectora: true
   field_raza_animal: true
   field_sexo_animal: true
   field_tamano_animal: true

@@ -5,10 +5,10 @@ dependencies:
   config:
     - field.field.node.animal.body
     - field.field.node.animal.field_edad_animal
-    - field.field.node.animal.field_etiqueta_protectora
     - field.field.node.animal.field_etiqueta_raza
     - field.field.node.animal.field_etiquetas_animal
     - field.field.node.animal.field_foto_animal
+    - field.field.node.animal.field_protectora
     - field.field.node.animal.field_raza_animal
     - field.field.node.animal.field_sexo_animal
     - field.field.node.animal.field_tamano_animal
@@ -112,7 +112,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 1
     region: content
   field_edad_animal:
     type: string
@@ -122,21 +122,13 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
-  field_etiqueta_protectora:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 12
-    region: content
   field_etiqueta_raza:
     type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 11
+    weight: 6
     region: content
   field_etiquetas_animal:
     type: entity_reference_label
@@ -144,7 +136,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 5
     region: content
   field_foto_animal:
     type: image
@@ -153,7 +145,15 @@ content:
       image_link: ''
       image_style: imagen_animal
     third_party_settings: {  }
-    weight: 8
+    weight: 2
+    region: content
+  field_protectora:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_raza_animal:
     type: string
@@ -189,6 +189,6 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    weight: 4
     region: content
 hidden: {  }

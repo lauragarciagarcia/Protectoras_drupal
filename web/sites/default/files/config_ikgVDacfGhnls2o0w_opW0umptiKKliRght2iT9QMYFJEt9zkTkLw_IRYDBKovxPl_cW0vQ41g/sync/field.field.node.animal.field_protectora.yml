@@ -1,0 +1,29 @@
+uuid: 8f177eb4-8715-4166-8660-446315502d0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protectora
+    - node.type.animal
+    - node.type.protectora
+id: node.animal.field_protectora
+field_name: field_protectora
+entity_type: node
+bundle: animal
+label: 'Protectora a la que pertenece'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      protectora: protectora
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

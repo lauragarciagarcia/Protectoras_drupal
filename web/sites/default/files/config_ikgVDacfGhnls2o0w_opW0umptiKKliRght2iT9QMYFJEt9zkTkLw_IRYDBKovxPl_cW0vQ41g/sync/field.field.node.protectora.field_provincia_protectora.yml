@@ -1,16 +1,16 @@
-uuid: ed9f4fca-d91e-4c2f-90ed-b3a1053610ec
+uuid: 0ad470b6-dc8a-4035-a291-6da7e456e78d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_etiqueta_protectora
-    - node.type.animal
-    - taxonomy.vocabulary.protectoras
-id: node.animal.field_etiqueta_protectora
-field_name: field_etiqueta_protectora
+    - field.storage.node.field_provincia_protectora
+    - node.type.protectora
+    - taxonomy.vocabulary.provincias
+id: node.protectora.field_provincia_protectora
+field_name: field_provincia_protectora
 entity_type: node
-bundle: animal
-label: 'Etiqueta Protectora'
+bundle: protectora
+label: 'Provincia protectora'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      protectoras: protectoras
+      provincias: provincias
     sort:
       field: name
       direction: asc
