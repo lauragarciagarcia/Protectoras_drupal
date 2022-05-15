@@ -75,7 +75,7 @@ third_party_settings:
     group_edad:
       children:
         - field_edad_animal
-      label: Edad
+      label: 'Fecha de nacimiento'
       parent_name: group_informacion
       region: content
       weight: 3
@@ -86,8 +86,6 @@ third_party_settings:
         id: ''
         formatter: closed
         description: ''
-        direction: vertical
-        width_breakpoint: 640
     group_sexo:
       children:
         - field_sexo_animal

@@ -13,7 +13,7 @@ entity_type: node
 bundle: animal
 label: 'Tipo animal'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
