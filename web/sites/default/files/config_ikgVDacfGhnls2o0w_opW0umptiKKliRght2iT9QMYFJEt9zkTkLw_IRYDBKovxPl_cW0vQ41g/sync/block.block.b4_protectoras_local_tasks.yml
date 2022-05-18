@@ -1,0 +1,22 @@
+uuid: 59e1deda-5e86-44fc-86da-e9db7f2b8aa2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b4_protectoras
+_core:
+  default_config_hash: IzSbK3zk-Gon9y7WLEWop15Wn__7LeKzBJIXqajlb00
+id: b4_protectoras_local_tasks
+theme: b4_protectoras
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

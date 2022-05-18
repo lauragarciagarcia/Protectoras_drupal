@@ -1,0 +1,22 @@
+uuid: 1672be5c-3cc7-4061-9ebc-43e34d9be616
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b4_protectoras
+_core:
+  default_config_hash: tZtWC6EKIYALVtpV4mPz79GsLZD6IFWb7Wk1B7Rd8Go
+id: b4_protectoras_messages
+theme: b4_protectoras
+region: content
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

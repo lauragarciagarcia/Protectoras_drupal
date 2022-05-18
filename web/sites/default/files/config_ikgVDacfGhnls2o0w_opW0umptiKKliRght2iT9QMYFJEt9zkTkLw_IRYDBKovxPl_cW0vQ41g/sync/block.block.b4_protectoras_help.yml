@@ -1,0 +1,22 @@
+uuid: 078c66fe-b4c4-4c14-8264-0f421f3d317f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - b4_protectoras
+_core:
+  default_config_hash: JPtjio142VL7z1Y-K1aWkTXu5wId7r4-zNUHozwLqf0
+id: b4_protectoras_help
+theme: b4_protectoras
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

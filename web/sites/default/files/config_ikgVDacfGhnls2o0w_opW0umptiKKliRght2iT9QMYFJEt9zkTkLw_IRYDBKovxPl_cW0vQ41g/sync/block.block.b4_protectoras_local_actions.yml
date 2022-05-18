@@ -1,0 +1,20 @@
+uuid: 914553b4-1e34-4f95-8aee-f553e8cae0f4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b4_protectoras
+_core:
+  default_config_hash: rKurRLaH08AjwE5wsNzeL2fa77rF5pXKSR9WopsFYyI
+id: b4_protectoras_local_actions
+theme: b4_protectoras
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

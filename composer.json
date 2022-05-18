@@ -27,6 +27,8 @@
         "drupal/iframe": "^2.16",
         "drupal/leaflet": "^2.1",
         "drupal/pathauto": "^1.10",
+        "drupal/slick": "^2.6",
+        "drupal/slick_views": "^2.6",
         "drupal/taxonomy_menu": "^3.5",
         "drupal/telephone_formatter": "^1.1",
         "drupal/webform": "^6.1",

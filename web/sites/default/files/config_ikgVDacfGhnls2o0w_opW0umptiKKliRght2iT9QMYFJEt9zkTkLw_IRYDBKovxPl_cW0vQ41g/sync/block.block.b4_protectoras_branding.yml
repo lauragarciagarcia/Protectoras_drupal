@@ -1,0 +1,25 @@
+uuid: 5671bee9-ca9c-4fd9-9e02-636dba657a40
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b4_protectoras
+_core:
+  default_config_hash: 0XmTH5dbJRl-fsDBgX10MzeFMarkhKpzU7ZGdGPfAMU
+id: b4_protectoras_branding
+theme: b4_protectoras
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

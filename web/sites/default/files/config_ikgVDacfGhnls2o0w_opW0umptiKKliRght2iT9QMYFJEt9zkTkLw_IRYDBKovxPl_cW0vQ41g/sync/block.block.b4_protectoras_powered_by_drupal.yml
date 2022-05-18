@@ -1,0 +1,22 @@
+uuid: bbf94377-20b2-481b-a829-9de95ff67645
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b4_protectoras
+_core:
+  default_config_hash: pCYcyBIVbwKUmraga_6Ycz5P-bhQJLJS_8HtOFpMq-o
+id: b4_protectoras_powered_by_drupal
+theme: b4_protectoras
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

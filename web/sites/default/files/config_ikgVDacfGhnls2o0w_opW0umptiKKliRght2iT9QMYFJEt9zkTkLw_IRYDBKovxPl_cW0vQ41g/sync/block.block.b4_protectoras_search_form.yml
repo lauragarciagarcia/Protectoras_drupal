@@ -1,0 +1,23 @@
+uuid: dd0df55f-4458-4d1a-8ace-839a78023304
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - b4_protectoras
+_core:
+  default_config_hash: Ja6tDzYId0ZPQE1SEJTQNb0ZNv5ttB1iO5xv6hIToQ8
+id: b4_protectoras_search_form
+theme: b4_protectoras
+region: nav_additional
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Buscar
+  label_display: '0'
+  provider: search
+  page_id: node_search
+visibility: {  }
