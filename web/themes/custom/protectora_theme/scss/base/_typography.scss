@@ -237,3 +237,43 @@ a.feed-icon{
   margin-right: auto;
   display: block;
 }
+
+// Carousel
+.slide__description > article.node.node--type-animal.node--promoted.node--view-mode-teaser > h2{
+    text-align: center;
+}
+.slide__description >
+.node.node--type-animal.node--promoted.node--view-mode-teaser > .node__content >
+.field.field--name-field-foto-animal.field--type-image.field--label-hidden.field__item >
+a > img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+    height: 20%;
+}
+.slick__slide.slide.slick-slide.slick-current >
+.slide__content > .slide__caption > div.slide__description >
+article.node.node--type-animal.node--promoted.node--view-mode-teaser > div.node__content >
+div.node__links > ul.links.inline >li.node-readmore > a{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-right: 130px;
+}
+.slick__arrow{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.slide__caption{
+    padding-bottom: 0;
+}
+.slick-prev.slick-arrow{
+    margin-right: 40px;
+}
+.slick-next.slick-arrow{
+    margin-left: 20px;
+}

@@ -9,6 +9,14 @@
     @include buttons($red, $white, $red, $red, $red, $white, $color-light-red);
 }
 
+//Carousel
+.slick-arrow{
+    @include buttons($red, $white, $red, $red, $red, $white, $color-light-red);
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 0;
+}
+
 // Tertiary
 .btn-dark{
     @include buttons($black, $white, $black, $white, $black, $white, $color-light-black);
