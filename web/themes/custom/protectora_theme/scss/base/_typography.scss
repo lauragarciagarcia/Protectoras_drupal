@@ -1,0 +1,239 @@
+/*
+  ##Device = Mobile (Portrait & Landscape)
+*/
+@media screen and (min-width: $breakpoint-mobile), screen and (max-width:$breakpoint-mobile) {
+    h1.page-title {font-size: $font-26-l;
+        line-height: $line-38-l;
+        margin-top: $space-s;}
+    h2 {font-size: $font-20-xs;
+        line-height: $line-27-xxs;
+        color: $dark-gray;
+        margin-top: $space-xxs;}
+    h3 {font-size: $font-20-xs;
+        line-height: $line-27-xxs;
+        margin-top: $space-xxs;}
+    h4 {font-size: $font-16-xxxs;
+        line-height: $line-24-xxxxs;}
+    p  {font-size: $font-16-xxxs;
+        line-height: $line-24-xxxxs;}
+    button {margin-top: $space-xs;
+        margin-bottom: $space-s;}
+}
+/*
+  ##Device = Tablets
+*/
+@media (min-width: $breakpoint-tablet) {
+    h1.page-title {font-size: $font-30-xl;
+        line-height: $line-60-xl;
+        margin-top: $space-xs;}
+    h2 {font-size: $font-26-l;
+        line-height: $line-36-m;
+        color: $black;
+        margin-top: $space-xxs;}
+    h3 {font-size: $font-22-xs;
+        line-height: $line-32-xs;
+        margin-top: $space-xxs;}
+    h4 {font-size: $font-18-xxs;
+        line-height: $line-26-xxxs;}
+    p  {font-size: $font-18-xxs;
+        line-height: $line-26-xxxs;}
+    button {margin-top: $space-xs;
+        margin-bottom: $space-s;}
+}
+/*
+  ##Device = Desktops
+*/
+@media (min-width: $breakpoint-desktop) {
+    h1.page-title {font-size: $font-50-xxl;
+        line-height: $line-70-xxl;
+        margin-top: $space-m;}
+    h2 {font-size: 40px;
+        line-height: $line-60-xl;
+        color: $red !important;
+        margin-top: $space-xs;}
+    h3 {font-size: $font-25-m;
+        line-height: $line-35-s;
+        margin-top: $space-xs;}
+    h4 {font-size: $font-18-xxs;
+        line-height: $line-26-xxxs;}
+    p  {font-size: $font-18-xxs;
+        line-height: $line-26-xxxs;}
+    button {margin-top: $space-s;
+        margin-bottom: $space-m;}
+}
+
+h1.page-title{
+    @include texts($red, $semiBold);
+}
+.field.field--name-title.field--type-string.field--label-hidden{
+    color: $black;
+}
+
+.js-form-item.form-item.js-form-type-textarea.form-type-textarea.js-form-item-aspectos-a-mejorar.form-item-aspectos-a-mejorar,
+.js-form-item.form-item.js-form-type-webform-rating.form-type-webform-rating.js-form-item-tu-opinion-sobre-la-web.form-item-tu-opinion-sobre-la-web{
+    font-weight: bold;
+}
+
+.js-form-wrapper.form-wrapper,
+.js-form-wrapper.form-wrapper{
+    border-radius: 10px;
+}
+
+p, blockquote{
+    text-align: justify;
+}
+
+img{
+    margin-bottom: 20px;
+}
+/*
+.image-style-logo-protectora{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}*/
+
+.field.field--type-entity-reference.field--label-above{
+    margin-bottom: 10px;
+}
+.region.region-content{
+    padding-bottom: 40px;
+}
+
+.region.region-footer > * > *,
+.region.region-footer > * > * > *,
+.region.region-footer > * > * > * > *{
+    color: $white;
+}
+//
+.block.block-system.block-system-powered-by-block{
+    color: $white;
+}
+.region.region-footer >.nav-link{
+    color: $white;
+}
+
+li.grid > .grid__content{
+    text-align: center;
+}
+
+article.node.node--type-protectora.node--promoted.node--view-mode-teaser{
+    max-width: 400px;
+}
+
+.view.view-protectoras-huesca.view-id-protectoras_huesca >
+div > //view content
+div.item-list.item-list--blazy.item-list--blazy-column > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.view.view-protectoras-zaragoza.view-id-protectoras_zaragoza > div >
+div.item-list.item-list--blazy.item-list--blazy-column > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.view.view-protectoras-teruel.view-id-protectoras_teruel >div >
+div.item-list.item-list--blazy.item-list--blazy-column > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.feed-icon{
+    display: none;
+}
+
+//icons
+.dropdown-toggle::after{
+    @include icons();
+    margin-left: 0.255em;
+    vertical-align: 0.1rem;
+    content: "\e802";
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.field.field--name-field-telefono-protectora.field--type-telephone.field--label-hidden.field__item::before{
+    @include icons();
+    margin-left: 0.255em;
+    vertical-align: 0.1rem;
+    content: "\e801";
+    font-size: 14px;
+    margin-left: 3px;
+    margin-right: 10px;
+}
+.field.field--name-field-su-correo.field--type-email.field--label-hidden.field__item::before{
+    @include icons();
+    margin-left: 0.255em;
+    vertical-align: 0.1rem;
+    content: "\e800";
+    font-size: 14px;
+    margin-left: 3px;
+    margin-right: 10px;
+}
+.field.field--name-field-link-a-su-web.field--type-link.field--label-hidden.field__item::before{
+    @include icons();
+    margin-left: 0.255em;
+    vertical-align: 0.1rem;
+    content: "\e80b";
+    font-size: 14px;
+    margin-left: 3px;
+    margin-right: 10px;
+}
+.field.field--name-field-direccion.field--type-string.field--label-hidden.field__item{
+    &::before{
+        @include icons();
+    margin-left: 0.255em;
+    vertical-align: 0.1rem;
+    content: "\e808";
+    font-size: 14px;
+    margin-left: 3px;
+    margin-right: 10px;
+    }
+    margin-bottom: 20px;
+}
+#block-protectora-theme-powered-by-drupal:before{
+    @include icons();
+    margin-left: 0.255em;
+    vertical-align: 0.1rem;
+    content: "\e805";
+    color: aqua;
+    font-size: 16px;
+    margin-left: 3px;
+    margin-right: 10px;
+}
+
+//Map
+.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom{
+    margin-bottom: 20px;
+}
+
+//Delete contact
+.region.region-footer > .block.block-menu.navigation.menu--footer > .nav.navbar-nav > *{
+    display: none;
+}
+
+//Titles Buscar animal
+.blazy.blazy--view.blazy--view--buscar-animal > li > div > div > span > a{
+    color: $black;
+    font-weight: $semiBold;
+    font-size: 22px;
+}
+//filters
+.form-control:focus{
+    border-color: $red;
+    box-shadow: 0 0 0 0.2rem #d3a382;
+
+}
+
+
+//Logo in protectora page
+.node.node--type-protectora.node--promoted.node--view-mode-full > .node__content >
+.field.field--name-field-logo-protectora.field--type-image.field--label-hidden.field__item >
+.image-style-logo-protectora{
+    margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

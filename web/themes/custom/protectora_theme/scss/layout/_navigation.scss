@@ -1,0 +1,23 @@
+.nav-item.nav-link, .nav-item.nav-link.dropdown-toggle, .nav-link{
+    font-size: $font-16-xxxs;
+    color: $light-black;
+    &:hover{
+        color: $black;
+        font-weight: $semiBold;
+    }
+}
+
+// Hamburger icon
+.navbar-toggler-icon::before{
+    font-family: 'Plus';
+    font-style: normal;
+    content: "\e803";
+    font-size: 20px;
+    color: black;
+    line-height: 24px;
+    align-content: center;
+}
+
+.dropdown-menu.show{
+    border-radius: 10px;
+}

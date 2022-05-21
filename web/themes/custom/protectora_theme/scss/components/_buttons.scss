@@ -1,0 +1,34 @@
+
+// Primary
+.btn-primary{
+    @include buttons($red, $red, $white, $red, $white, $red, $color-light-red);
+}
+
+// Secondary
+.btn-outline-primary{
+    @include buttons($red, $white, $red, $red, $red, $white, $color-light-red);
+}
+
+// Tertiary
+.btn-dark{
+    @include buttons($black, $white, $black, $white, $black, $white, $color-light-black);
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+    background-color: darken($red, 5%);
+    border-color: $red;
+    &:focus{
+        box-shadow: 0 0 0 0.2rem $color-light-red;
+    }
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active{
+    background-color: darken($white, 4%);
+    color: $red;
+    border-color: $red;
+    &:focus{
+        box-shadow: 0 0 0 0.2rem $color-light-red;
+    }
+}
+
+#edit-submit-buscar-animal{
+    margin-bottom: 20px;
+}

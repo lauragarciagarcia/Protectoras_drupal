@@ -1,0 +1,39 @@
+// Typography
+@mixin texts ($color-letra, $peso-letra){
+    font-family: $archivo;
+    letter-spacing: $spacing-0;
+    color: $color-letra;
+    font-weight: $peso-letra;
+}
+
+// Buttons
+@mixin buttons ($border, $background, $color, $border-hover, $background-hover, $color-hover, $shadow){
+    font-family: $archivo;
+    font-weight: $semiBold;
+    font-size: 18px;
+    letter-spacing: $spacing-0;
+    text-align: $centered;
+    line-height: 26px;
+    background: $background;
+    color: $color;
+    border: 1px solid $border;
+    padding: 10px 50px;
+    &:hover{
+        border: 1px solid $border-hover;
+        background: $background-hover;
+        color: $color-hover;
+    }
+    &:focus{
+        border: 1px solid $border;
+        color: $color;
+        background: $background;
+        box-shadow: 0 0 0 0.2rem $shadow;
+    }
+}
+
+//Icons
+@mixin icons {
+    display: inline-block;
+    font-family: 'Plus';
+    border: 0;
+}
